@@ -4,6 +4,6 @@ for (var _i = 0, numArray1_1 = numArray1; _i < numArray1_1.length; _i++) {
     var number = numArray1_1[_i];
     for (var _a = 0, numArray2_1 = numArray2; _a < numArray2_1.length; _a++) {
         var number2 = numArray2_1[_a];
-        document.write(number + "X" + number2 + " = ", number * number2 + "<br>");
+        document.write(number + "*" + number2 + " = ", number * number2 + "<br>");
     }
 }
