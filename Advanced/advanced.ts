@@ -6,20 +6,39 @@ const restaurant: {name: string, openingHours: string, est: number} = {
 
 let guests: string[] = ["Ivan", "Kim", "Stephan"];
 
-let menu: {dish: string, price: number, comment: string, rating: number} = {};
+let menu: {dish: string, price: number, comment: string, rating: number} = [{
 
-var addToMenu= (a: string,b:number,c:string,d:number) => {
-	menu.dish = a;
+}];
+
+menu[0] = {dish: "Pizza", price: 10, comment: "string", rating: 5};
+menu[1] = {dish: "Spaghetti", price: 8, comment: "bla", rating: 3};
+
+console.log(menu[0]);
+console.log(menu[1]);
+
+console.table(menu);
+
+/*addToMenu= (a: string,b:number,c:string,d:number) => {
+
+	menu[i].dish = a;
 	menu.price = b;
 	menu.comment = c;
 	menu.rating = d;
 	console.log(menu.dish)
-};
+}*/
+
+/*menu.dish = "Pizza";
+menu.dish += "Spaghetti";
+
+console.log(menu);*/
+
+/*var 
+};*/
 
 /*var pizza = addToMenu("Pizza", 10, "Delish", 5);
 var spaghetti = addToMenu("Spaghetti", 8, "Mediocre", 3);*/
 
-for (var i = 0; i < this.menu.length; i++) {
+/*for (var i = 0; i < this.menu.length; i++) {
     // merge objects into one with multiple props
     this.menu[i] = Object.assign(this.menu[i], {
         dish: 'Pizza', 
@@ -29,4 +48,4 @@ for (var i = 0; i < this.menu.length; i++) {
     });
 }
 
-console.log(menu);
+console.log(menu);*/
